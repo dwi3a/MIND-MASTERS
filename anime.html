@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagonal Thumbnail Slideshow Animation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class='homepage'>
+    <div class="slider">
+        <div class="nav">
+            <div class="next"></div>
+            <div class="prev"></div>
+            <div class="startbutton">start the quiz</div>
+        </div>
+        <div class="item is-active">
+            <div class="content">
+                <div class="wrap">Sports</div>
+            </div>
+            <div class="imgs">
+                <div class="grid">
+                    <div class="img img-1"><img src="https://www.muralunique.com/wp-content/uploads/2022/02/1930_sports-equipment.jpg" alt="img1"></div>
+                    <div class="img img-2"><img src="https://i.pinimg.com/564x/d9/b1/b6/d9b1b6d66fe295976eddcb8d5aeff454.jpg" alt="img2"></div>
+                    <div class="img img-3"><img src="https://i.pinimg.com/564x/69/fe/3f/69fe3f35b6456c2fa2978392381ba403.jpg" alt="img3"></div>
+                    <div class="img img-4"><img src="https://i.pinimg.com/736x/7b/37/f7/7b37f74145985f58fbbd5cd6bc780103.jpg" alt="img4"></div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="content">
+                <div class="wrap">Capitals</div>
+            </div>
+            <div class="imgs">
+                <div class="grid">
+                    <div class="img img-1"><img src="https://i.pinimg.com/564x/4b/8d/1c/4b8d1c98ffdeb919401982e24df5d513.jpg" alt="img1"></div>
+                    <div class="img img-2"><img src="https://i.pinimg.com/564x/95/f8/61/95f86170f93a8466f628d9a435b80ee8.jpg" alt="img2"></div>
+                    <div class="img img-3"><img src="https://i.pinimg.com/564x/8c/b4/d0/8cb4d09abfc16f933a4722f88b61bfe0.jpg" alt="img3"></div>
+                    <div class="img img-4"><img src="https://i.pinimg.com/736x/cf/62/23/cf622364f69911c1df21f7703ce5229e.jpg" alt="img4"></div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="content">
+                <div class="wrap">Nature</div>
+            </div>
+            <div class="imgs">
+                <div class="grid">
+                    <div class="img img-1"><img src="https://i.pinimg.com/564x/78/93/6e/78936e9f79e1eaad505f97f14d751729.jpg" alt="img1"></div>
+                    <div class="img img-2"><img src="https://i.pinimg.com/564x/33/67/cc/3367ccba977266b20914a9e5cdbe69fc.jpg" alt="img2"></div>
+                    <div class="img img-3"><img src="https://picsum.photos/seed/k/700/700" alt="img3"></div>
+                    <div class="img img-4"><img src="https://i.pinimg.com/564x/ea/15/3a/ea153a482e53d340de61ec473ffe463d.jpg" alt="img4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="choosetopic">
+    <!-- Heading for topic selection -->
+    <h2 class="choosetitle">CHOOSE YOUR TOPIC <br>
+    <!-- Buttons for selecting different topics -->
+    <button class='topic1button' type="button">GENERAL KNOWLEDGE</button>
+    <button class='topic2button' type="button">NATURE</button>
+    <button class='topic3button' type="button">CAPITALS</button>
+    <button class='topic4button' type="button">SPORTS</button></h2>
+        
+    <!-- Quiz container section -->
+    
+</div>
+<div class="quiz-container">
+    <!-- Heading for displaying quiz questions -->
+    <div id="question"></div>
+    <!-- Container for displaying answer choices -->
+    <div id="choices">
+        <button id="choice-1" class="choice"></button>
+        <button id="choice-2" class="choice"></button>
+        <button id="choice-3" class="choice"></button>
+        <button id="choice-4" class="choice"></button>
+    </div>
+</div>
+        <!-- Result display section -->
+<div class='resultdiv'>
+    <!-- Heading for displaying quiz result -->
+    <h2 id="result"></h2>
+    <button  class="tryagainbutton">Try again</button>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
